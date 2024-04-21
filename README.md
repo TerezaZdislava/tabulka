@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+React table with infinite scroll and dynamicaly generated product data. User can add a new product to the table through a simple form.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies: React, Javascript, react-table, styled-components, useLocalStorage
 
 ## Available Scripts
 

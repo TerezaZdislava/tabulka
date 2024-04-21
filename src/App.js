@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Table from './Table';
+import Table from './components/Table';
 
-import makeData from './makeData';
-import Form from './Form';
+import makeData from './data/makeData';
+import Form from './components/Form';
 import { useLocalStorage } from '@uidotdev/usehooks';
 
 const Styles = styled.div`
   padding: 10rem;
-  // display: flex;
-  // justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
@@ -47,7 +45,7 @@ function App() {
     }, 1500);
   };
 
-  const handleNewProduct = (e) => {
+  const addNewProduct = (e) => {
     setItems([e].concat(items));
   };
 
@@ -56,7 +54,7 @@ function App() {
   return (
     <Styles>
       <Table columns={columns} data={data} update={fetchMoreData} />
-      <Form sendformToParent={(e) => handleNewProduct(e)}></Form>
+      <Form sendformToParent={(e) => addNewProduct(e)}></Form>
     </Styles>
   );
 }

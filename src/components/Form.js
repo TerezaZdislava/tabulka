@@ -49,6 +49,7 @@ function Form({ sendformToParent }) {
     market: 'no',
   });
 
+  // update form values
   const paymentChange = (event) => {
     setFormData({
       ...formData,
@@ -70,6 +71,7 @@ function Form({ sendformToParent }) {
     });
   };
 
+  // validation
   const validate = () =>
     isNonEmptyString(formData.productName) ? true : false;
 

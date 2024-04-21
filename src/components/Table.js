@@ -45,9 +45,6 @@ const Styles = styled.div`
 `;
 
 function Table({ columns, data, update }) {
-  console.log(data);
-  // Use the state and functions returned from useTable to build your UI
-
   const {
     getTableProps,
     getTableBodyProps,

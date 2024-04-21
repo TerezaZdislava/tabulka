@@ -6,6 +6,7 @@ const range = (len) => {
   return arr;
 };
 
+// create new item
 const newItem = () => {
   const paymentChance = Math.random();
   return {
@@ -20,6 +21,7 @@ const newItem = () => {
   };
 };
 
+// create data
 export default function makeData(...lens) {
   const makeDataLevel = (depth = 0) => {
     const len = lens[depth];
